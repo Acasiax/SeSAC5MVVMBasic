@@ -88,7 +88,9 @@ class LoginViewController: UIViewController {
     
     func bindData() {
         
-        
+        viewModel.outputValidationText.bind {
+            
+        }
         
     }
     
