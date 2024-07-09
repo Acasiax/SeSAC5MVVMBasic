@@ -38,7 +38,16 @@ class NumberViewController: UIViewController {
         configureUI()
         configureConstraints()
         configureActions()
+        bindData()
     }
+    
+    func bindData() {
+        viewModel.outputAmount.bind {  value in
+            self.formattedAmountLabel.text = value
+        }
+        
+    }
+    
 
     // MARK: - configure Methods
     private func configureUI() {
@@ -72,10 +81,8 @@ class NumberViewController: UIViewController {
  
     
     @objc func amountChanged() {
-        print(#function, viewModel)
-        viewModel.inputAmount = amountTextField.text
-        
-        convertedAmountLabel.text = viewModel.outputAmount
+        print(#function, viewModel.outputAmount)
+        viewModel.inputAmount.value = amountTextField.text
     }
     
     

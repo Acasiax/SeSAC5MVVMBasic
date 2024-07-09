@@ -10,28 +10,29 @@ import Foundation
 class NumberViewModel {
     private var exchangeRate = 1300.0
    
-    var inputAmount: String? = "" {
-        didSet {
-            print("값이 변함: \(inputAmount)")
-            validation(inputAmount)
+    var inputAmount: Observable<String?> = Observable("")
+    var outputAmount = Observable("")
+    
+    init() {
+        inputAmount.bind {  value in
+            self.validation()
         }
+        
     }
     
-    var outputAmount = ""
-    
-    private func validation(_ value: String?){
+    private func validation(){
         print(#function)
         
         //1.
-        guard let text = value else {
-            outputAmount = ""
+        guard let text = inputAmount.value else {
+            outputAmount.value = ""
             return
         }
         
         
         //2.
         if text.isEmpty {
-            outputAmount = "값을 입력해주세요"
+            outputAmount.value = "값을 입력해주세요"
             return
            
         }
@@ -39,7 +40,7 @@ class NumberViewModel {
         
         //3.
         guard let num = Int(text) else {
-            outputAmount =  "숫자만 입력해주세요"
+            outputAmount.value =  "숫자만 입력해주세요"
             return
         }
         
@@ -49,7 +50,7 @@ class NumberViewModel {
             let format = NumberFormatter()
             format.numberStyle = .decimal
             let wonResult = format.string(from: num as NSNumber)!
-          outputAmount = "$" + wonResult
+            outputAmount.value = "$" + wonResult
            
             
             
@@ -62,7 +63,7 @@ class NumberViewModel {
 //            convertedAmountLabel.text = converedResult //원화기호을 붙여주지도 않았는데도 되는이유
             
         } else {
-            outputAmount = "천만원 이하를 입력해주세요"
+            outputAmount.value = "천만원 이하를 입력해주세요"
 
         }
        

@@ -9,12 +9,13 @@ import Foundation
 
 class Observable<T> {
     
-var closure: (() -> Void)?
+var closure: ((T) -> Void)?
    
     var value: T {
         didSet {
-            print("이건 실행이 되지 않을꺼다, 아직은 아무것도 들어가지 않아서")
-            closure?()
+           // print("이건 실행이 되지 않을꺼다, 아직은 아무것도 들어가지 않아서")
+            print("didset")
+            closure?(value)
         }
     }
     
@@ -24,8 +25,8 @@ var closure: (() -> Void)?
     
     //LoginViewController의
     //🌟
-    func bind(closure: @escaping () -> Void) {
-        closure()
+    func bind(closure: @escaping (T) -> Void) {
+        closure(value)
         self.closure = closure
     }
     

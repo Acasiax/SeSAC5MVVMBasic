@@ -18,6 +18,7 @@
 		AA6BD3012C3CC6C600107AF6 /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3002C3CC6C600107AF6 /* NumberViewModel.swift */; };
 		AA6BD3032C3CD55300107AF6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3022C3CD55300107AF6 /* LoginViewModel.swift */; };
 		AA6BD3052C3CFC6800107AF6 /* Observabld.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3042C3CFC6800107AF6 /* Observabld.swift */; };
+		AA6BD3072C3D0DB100107AF6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3062C3D0DB100107AF6 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		AA6BD3002C3CC6C600107AF6 /* NumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
 		AA6BD3022C3CD55300107AF6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AA6BD3042C3CFC6800107AF6 /* Observabld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observabld.swift; sourceTree = "<group>"; };
+		AA6BD3062C3D0DB100107AF6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				04D2F9032C3CB12600AEFFDC /* UserViewController.swift */,
+				AA6BD3062C3D0DB100107AF6 /* UserViewModel.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				04D2F8E52C3CAD5A00AEFFDC /* AppDelegate.swift in Sources */,
 				04D2F8E72C3CAD5A00AEFFDC /* SceneDelegate.swift in Sources */,
 				AA6BD3032C3CD55300107AF6 /* LoginViewModel.swift in Sources */,
+				AA6BD3072C3D0DB100107AF6 /* UserViewModel.swift in Sources */,
 				AA6BD3052C3CFC6800107AF6 /* Observabld.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

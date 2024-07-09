@@ -15,7 +15,7 @@ struct User {
 
 class UserViewController: UIViewController {
     
-    private var list: [User] = []
+ // private var list: [User] = []
     
     private lazy var searchBar: UISearchBar = {
         let searchBar = UISearchBar()
@@ -32,10 +32,21 @@ class UserViewController: UIViewController {
         return tableView
     }()
     
+    let viewModel = UserViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.inputViewDidLoadTrigger.value = ()
         setupUI()
         setupNavigationItems()
+        bindData()
+    }
+    
+    func  bindData() {
+        
+        viewModel.outputList.bind { _ in
+            self.tableView.reloadData()
+        }
     }
     
     private func setupUI() {
@@ -63,12 +74,17 @@ class UserViewController: UIViewController {
         navigationItem.rightBarButtonItems = [addButton, removeAllButton]
     }
     
+    
+    
     @objc private func addRandomUser() {
-        let randomName = generateRandomName()
-        let randomAge = Int.random(in: 18...80)
-        let newUser = User(name: randomName, age: randomAge)
-        list.append(newUser)
-        tableView.reloadData()
+        
+        viewModel.inputAddTapped.value = ()
+        
+//        let randomName = generateRandomName()
+//        let randomAge = Int.random(in: 18...80)
+//        let newUser = User(name: randomName, age: randomAge)
+//        viewModel.outputList.value.append(newUser)
+//        tableView.reloadData()
     }
     
     private func generateRandomName() -> String {
@@ -82,19 +98,23 @@ class UserViewController: UIViewController {
     }
     
     @objc private func removeAllUsers() {
-        list.removeAll()
+        viewModel.inputAddTapped.value = ()
         tableView.reloadData()
+        /*
+         어차피 뷰컨트롤러의 부담이 줄어들면 뷰모델이 그 부담을 다 가져가게 되면 조삼모사 아니냐⚠️
+         
+         */
     }
 }
 
 extension UserViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.count
+        return viewModel.outputList.value.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserCell", for: indexPath)
-        let user = list[indexPath.row]
+        let user = viewModel.outputList.value[indexPath.row]
         cell.textLabel?.text = "\(user.name) (\(user.age)세)"
         return cell
     }

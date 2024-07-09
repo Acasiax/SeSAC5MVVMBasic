@@ -88,14 +88,14 @@ class LoginViewController: UIViewController {
     
     func bindData() {
         
-        viewModel.outputValidationText.bind {
-            print("===")
-            self.validationLabel.text = self.viewModel.outputValidationText.value
+        viewModel.outputValidationText.bind { value in
+            self.validationLabel.text = value
         }
         
-        viewModel.outputValid.bind{
-            let value = self.viewModel.outputValid.value
-            
+        
+      
+        
+        viewModel.outputValid.bind { value in
             self.validationLabel.textColor = value ? .blue : .red
             self.loginButton.backgroundColor = value ? .systemGreen : .gray
             self.loginButton.isEnabled = value

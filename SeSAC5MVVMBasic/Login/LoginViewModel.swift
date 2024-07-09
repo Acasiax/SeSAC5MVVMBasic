@@ -11,7 +11,7 @@ import Foundation
 class LoginViewModel {
     
     //실시간으로 달라지는 데이터를 감지
-    var inputId: Observable<String?> = Observable(nil)
+    var inputId: Observable<String?> = Observable("")
     var inputPassword: Observable<String?> = Observable(nil)
     
     var outputValidationText = Observable("")
@@ -20,11 +20,11 @@ class LoginViewModel {
     
     init() {
         print("뷰 모델이 생성되었다.")
-        inputId.bind {
+        inputId.bind {_ in 
             self.validation()
         }
         
-        inputPassword.bind {
+        inputPassword.bind {_ in 
             self.validation()
         }
     }
