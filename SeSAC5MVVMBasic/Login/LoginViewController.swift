@@ -75,7 +75,7 @@ class LoginViewController: UIViewController {
         configureUI()
         configureConstraints()
         configureActions()
-        textFieldDidChange() //꼭 한번은 실행하고 시작해라, 그러면 인풋,아웃풋 하지 않아도 최초 초기 설정이 되기 때문
+        bindData()
     }
 
     private func configureUI() {
@@ -140,11 +140,8 @@ class LoginViewController: UIViewController {
 
     @objc private func textFieldDidChange() {
         print(#function)
-        viewModel.inputId = idTextField.text
-        viewModel.inputPassword = passwordTextField.text
-        
+        viewModel.inputId.value = idTextField.text
+        viewModel.inputPassword.value = passwordTextField.text
     
-      
-        
     }
 }

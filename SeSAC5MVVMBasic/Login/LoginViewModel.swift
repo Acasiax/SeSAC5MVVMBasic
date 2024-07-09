@@ -8,32 +8,30 @@
 import Foundation
 //import UIKit
 
-
-
 class LoginViewModel {
     
     //실시간으로 달라지는 데이터를 감지
-    var inputId: String? = "" {
-        didSet {
-            validation()
-        }
-    }
-    
-    
-    var inputPassword: String? = "" {
-        didSet {
-            validation()
-        }
-        
-    }
+    var inputId: Observable<String?> = Observable(nil)
+    var inputPassword: Observable<String?> = Observable(nil)
     
     var outputValidationText = Observable("")
     var outputValid = Observable(false)
     
     
+    init() {
+        print("뷰 모델이 생성되었다.")
+        inputId.bind {
+            self.validation()
+        }
+        
+        inputPassword.bind {
+            self.validation()
+        }
+    }
+    
     private func validation() {
         
-        guard let id = inputId, let pw = inputPassword else {
+        guard let id = inputId.value, let pw = inputPassword.value else {
             return
         }
         
@@ -47,5 +45,5 @@ class LoginViewModel {
             outputValidationText.value = "이메일 3자, 비번 5자 이상"
         }
     }
-    
 }
+
