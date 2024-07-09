@@ -15,7 +15,6 @@ class LoginViewModel {
     //실시간으로 달라지는 데이터를 감지
     var inputId: String? = "" {
         didSet {
-            Observable(name: "잭")
             validation()
         }
     }
@@ -28,8 +27,8 @@ class LoginViewModel {
         
     }
     
-    var outputValidationText = Observable(name: "")
-    var outputValid = false
+    var outputValidationText = Observable("")
+    var outputValid = Observable(false)
     
     
     private func validation() {
@@ -40,11 +39,11 @@ class LoginViewModel {
         
         if id.count >= 3 && pw.count > 5 {
             print("유효성 통과")
-            outputValid = true
+            outputValid.value = true
             outputValidationText.value = "올바르게 잘 썼어요"
         } else {
             print("유효성 검증 오류")
-            outputValid = false
+            outputValid.value = false
             outputValidationText.value = "이메일 3자, 비번 5자 이상"
         }
     }

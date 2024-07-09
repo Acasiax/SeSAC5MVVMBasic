@@ -7,19 +7,19 @@
 
 import Foundation
 
-class Observable {
+class Observable<T> {
     
 var closure: (() -> Void)?
    
-    var value: String {
+    var value: T {
         didSet {
             print("이건 실행이 되지 않을꺼다, 아직은 아무것도 들어가지 않아서")
             closure?()
         }
     }
     
-    init(name: String) {
-        self.value = name
+    init(_ value: T) {
+        self.value = value
     }
     
     //LoginViewController의

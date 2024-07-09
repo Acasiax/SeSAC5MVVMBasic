@@ -89,19 +89,28 @@ class LoginViewController: UIViewController {
     func bindData() {
         
         viewModel.outputValidationText.bind {
+            print("===")
+            self.validationLabel.text = self.viewModel.outputValidationText.value
+        }
+        
+        viewModel.outputValid.bind{
+            let value = self.viewModel.outputValid.value
             
+            self.validationLabel.textColor = value ? .blue : .red
+            self.loginButton.backgroundColor = value ? .systemGreen : .gray
+            self.loginButton.isEnabled = value
         }
         
     }
     
-
+    
     private func configureConstraints() {
         idTextField.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide).offset(50)
             make.left.right.equalToSuperview().inset(20)
             make.height.equalTo(40)
         }
-
+        
         passwordTextField.snp.makeConstraints { make in
             make.top.equalTo(idTextField.snp.bottom).offset(20)
             make.left.right.height.equalTo(idTextField)
@@ -134,10 +143,8 @@ class LoginViewController: UIViewController {
         viewModel.inputId = idTextField.text
         viewModel.inputPassword = passwordTextField.text
         
-        validationLabel.text = viewModel.outputValidationText
-        validationLabel.textColor = viewModel.outputValid ? .blue : .red
-        loginButton.backgroundColor = viewModel.outputValid ? .systemGreen : .gray
-        loginButton.isEnabled = viewModel.outputValid
+    
+      
         
     }
 }
