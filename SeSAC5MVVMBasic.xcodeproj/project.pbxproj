@@ -19,6 +19,11 @@
 		AA6BD3032C3CD55300107AF6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3022C3CD55300107AF6 /* LoginViewModel.swift */; };
 		AA6BD3052C3CFC6800107AF6 /* Observabld.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3042C3CFC6800107AF6 /* Observabld.swift */; };
 		AA6BD3072C3D0DB100107AF6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3062C3D0DB100107AF6 /* UserViewModel.swift */; };
+		AA6BD3202C3E0E5D00107AF6 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD31F2C3E0E5D00107AF6 /* MarketViewController.swift */; };
+		AA6BD3222C3E103200107AF6 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3212C3E103200107AF6 /* MarketViewModel.swift */; };
+		AA6BD3252C3E128100107AF6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AA6BD3242C3E128100107AF6 /* Alamofire */; };
+		AA6BD3272C3E131800107AF6 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3262C3E131800107AF6 /* Market.swift */; };
+		AA6BD3292C3E209B00107AF6 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3282C3E209B00107AF6 /* APIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +40,10 @@
 		AA6BD3022C3CD55300107AF6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AA6BD3042C3CFC6800107AF6 /* Observabld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observabld.swift; sourceTree = "<group>"; };
 		AA6BD3062C3D0DB100107AF6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		AA6BD31F2C3E0E5D00107AF6 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
+		AA6BD3212C3E103200107AF6 /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
+		AA6BD3262C3E131800107AF6 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		AA6BD3282C3E209B00107AF6 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +52,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D2F8FD2C3CAE1800AEFFDC /* SnapKit in Frameworks */,
+				AA6BD3252C3E128100107AF6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +78,8 @@
 		04D2F8E32C3CAD5A00AEFFDC /* SeSAC5MVVMBasic */ = {
 			isa = PBXGroup;
 			children = (
+				AA6BD3042C3CFC6800107AF6 /* Observabld.swift */,
+				AA6BD31E2C3E0E1800107AF6 /* Market */,
 				04D2F9022C3CB11900AEFFDC /* User */,
 				04D2F8FF2C3CAF4C00AEFFDC /* Number */,
 				04D2F8F82C3CADF700AEFFDC /* Login */,
@@ -85,7 +97,6 @@
 			children = (
 				04D2F8F92C3CAE0400AEFFDC /* LoginViewController.swift */,
 				AA6BD3022C3CD55300107AF6 /* LoginViewModel.swift */,
-				AA6BD3042C3CFC6800107AF6 /* Observabld.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -108,6 +119,17 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		AA6BD31E2C3E0E1800107AF6 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				AA6BD31F2C3E0E5D00107AF6 /* MarketViewController.swift */,
+				AA6BD3212C3E103200107AF6 /* MarketViewModel.swift */,
+				AA6BD3262C3E131800107AF6 /* Market.swift */,
+				AA6BD3282C3E209B00107AF6 /* APIManager.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,6 +148,7 @@
 			name = SeSAC5MVVMBasic;
 			packageProductDependencies = (
 				04D2F8FC2C3CAE1800AEFFDC /* SnapKit */,
+				AA6BD3242C3E128100107AF6 /* Alamofire */,
 			);
 			productName = SeSAC5MVVMBasic;
 			productReference = 04D2F8E12C3CAD5A00AEFFDC /* SeSAC5MVVMBasic.app */;
@@ -157,6 +180,7 @@
 			mainGroup = 04D2F8D82C3CAD5A00AEFFDC;
 			packageReferences = (
 				04D2F8FB2C3CAE1800AEFFDC /* XCRemoteSwiftPackageReference "SnapKit" */,
+				AA6BD3232C3E128100107AF6 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 04D2F8E22C3CAD5A00AEFFDC /* Products */;
 			projectDirPath = "";
@@ -186,13 +210,17 @@
 			files = (
 				04D2F8FA2C3CAE0400AEFFDC /* LoginViewController.swift in Sources */,
 				04D2F9042C3CB12600AEFFDC /* UserViewController.swift in Sources */,
+				AA6BD3202C3E0E5D00107AF6 /* MarketViewController.swift in Sources */,
 				04D2F9012C3CAF5400AEFFDC /* NumberViewController.swift in Sources */,
 				AA6BD3012C3CC6C600107AF6 /* NumberViewModel.swift in Sources */,
 				04D2F8E52C3CAD5A00AEFFDC /* AppDelegate.swift in Sources */,
 				04D2F8E72C3CAD5A00AEFFDC /* SceneDelegate.swift in Sources */,
 				AA6BD3032C3CD55300107AF6 /* LoginViewModel.swift in Sources */,
 				AA6BD3072C3D0DB100107AF6 /* UserViewModel.swift in Sources */,
+				AA6BD3222C3E103200107AF6 /* MarketViewModel.swift in Sources */,
+				AA6BD3292C3E209B00107AF6 /* APIManager.swift in Sources */,
 				AA6BD3052C3CFC6800107AF6 /* Observabld.swift in Sources */,
+				AA6BD3272C3E131800107AF6 /* Market.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +443,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		AA6BD3232C3E128100107AF6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -422,6 +458,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 04D2F8FB2C3CAE1800AEFFDC /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		AA6BD3242C3E128100107AF6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA6BD3232C3E128100107AF6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
