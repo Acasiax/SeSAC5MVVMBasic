@@ -30,3 +30,6 @@ final class APIManager {
     
     
 }
+
+
+//클래스는 참조타입으로, didset 호출이 잘 안되는 경우가 있음.

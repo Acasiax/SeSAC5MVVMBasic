@@ -33,8 +33,20 @@ class NumberViewController: UIViewController {
     
    let viewModel = NumberViewModel()
  
+    func showAlert() {
+        let open = UIAlertAction(title: "확인", style: .default)
+        let delete = UIAlertAction(title: "삭제", style: .destructive)
+        let cancle = UIAlertAction(title: "취소", style: .cancel)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        //6주차 보충자료에 있음.
+        UIAlertAction(title: "ok", style: .default) {_ in
+            self.formattedAmountLabel.text = "dfdsf"
+        }
+        
         configureUI()
         configureConstraints()
         configureActions()
@@ -45,7 +57,7 @@ class NumberViewController: UIViewController {
         viewModel.outputAmount.bind {  value in
             self.formattedAmountLabel.text = value
         }
-        
+        showAlert()
     }
     
 

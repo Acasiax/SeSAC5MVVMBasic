@@ -13,6 +13,8 @@ class NumberViewModel {
     var inputAmount: Observable<String?> = Observable("")
     var outputAmount = Observable("")
     
+    static let format = NumberFormatter()
+    
     init() {
         inputAmount.bind {  value in
             self.validation()
@@ -47,9 +49,9 @@ class NumberViewModel {
         //4.
         if num > 0, num <= 10000000 {
             
-            let format = NumberFormatter()
-            format.numberStyle = .decimal
-            let wonResult = format.string(from: num as NSNumber)!
+          
+            NumberViewModel.format.numberStyle = .decimal
+            let wonResult = NumberViewModel.format.string(from: num as NSNumber)!
             outputAmount.value = "$" + wonResult
            
             

@@ -15,6 +15,12 @@
 		04D2F8FD2C3CAE1800AEFFDC /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 04D2F8FC2C3CAE1800AEFFDC /* SnapKit */; };
 		04D2F9012C3CAF5400AEFFDC /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2F9002C3CAF5400AEFFDC /* NumberViewController.swift */; };
 		04D2F9042C3CB12600AEFFDC /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D2F9032C3CB12600AEFFDC /* UserViewController.swift */; };
+		AA3CE2532C3F6070003DB370 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CE2522C3F6070003DB370 /* SampleViewController.swift */; };
+		AA3CE2552C3F6A03003DB370 /* ImageZoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CE2542C3F6A03003DB370 /* ImageZoomViewController.swift */; };
+		AA3CE2572C3F748C003DB370 /* HorizentalScrollerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CE2562C3F748C003DB370 /* HorizentalScrollerVC.swift */; };
+		AA3CE2592C3F781B003DB370 /* VerticalScrollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CE2582C3F781B003DB370 /* VerticalScrollVC.swift */; };
+		AA3CE25B2C3F9EF1003DB370 /* CloserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CE25A2C3F9EF1003DB370 /* CloserVC.swift */; };
+		AA3CE25D2C3FB41B003DB370 /* CloserUpgradeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CE25C2C3FB41B003DB370 /* CloserUpgradeVC.swift */; };
 		AA6BD3012C3CC6C600107AF6 /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3002C3CC6C600107AF6 /* NumberViewModel.swift */; };
 		AA6BD3032C3CD55300107AF6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3022C3CD55300107AF6 /* LoginViewModel.swift */; };
 		AA6BD3052C3CFC6800107AF6 /* Observabld.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3042C3CFC6800107AF6 /* Observabld.swift */; };
@@ -24,7 +30,26 @@
 		AA6BD3252C3E128100107AF6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AA6BD3242C3E128100107AF6 /* Alamofire */; };
 		AA6BD3272C3E131800107AF6 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3262C3E131800107AF6 /* Market.swift */; };
 		AA6BD3292C3E209B00107AF6 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3282C3E209B00107AF6 /* APIManager.swift */; };
+		AA6BD32C2C3E268200107AF6 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AA6BD32B2C3E268200107AF6 /* RealmSwift */; };
+		AA6BD32D2C3E269E00107AF6 /* RealmSwift in Embed Frameworks */ = {isa = PBXBuildFile; productRef = AA6BD32B2C3E268200107AF6 /* RealmSwift */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		AA6BD3302C3E322000107AF6 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD32F2C3E321F00107AF6 /* RealmModel.swift */; };
+		AA6BD3322C3E328D00107AF6 /* MoneyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3312C3E328D00107AF6 /* MoneyRepository.swift */; };
+		AA6BD3342C3E36E100107AF6 /* NumberFomatterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3332C3E36E100107AF6 /* NumberFomatterManager.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA6BD32E2C3E269E00107AF6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA6BD32D2C3E269E00107AF6 /* RealmSwift in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		04D2F8E12C3CAD5A00AEFFDC /* SeSAC5MVVMBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC5MVVMBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +61,12 @@
 		04D2F8F92C3CAE0400AEFFDC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		04D2F9002C3CAF5400AEFFDC /* NumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
 		04D2F9032C3CB12600AEFFDC /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		AA3CE2522C3F6070003DB370 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		AA3CE2542C3F6A03003DB370 /* ImageZoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageZoomViewController.swift; sourceTree = "<group>"; };
+		AA3CE2562C3F748C003DB370 /* HorizentalScrollerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizentalScrollerVC.swift; sourceTree = "<group>"; };
+		AA3CE2582C3F781B003DB370 /* VerticalScrollVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalScrollVC.swift; sourceTree = "<group>"; };
+		AA3CE25A2C3F9EF1003DB370 /* CloserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloserVC.swift; sourceTree = "<group>"; };
+		AA3CE25C2C3FB41B003DB370 /* CloserUpgradeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloserUpgradeVC.swift; sourceTree = "<group>"; };
 		AA6BD3002C3CC6C600107AF6 /* NumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
 		AA6BD3022C3CD55300107AF6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AA6BD3042C3CFC6800107AF6 /* Observabld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observabld.swift; sourceTree = "<group>"; };
@@ -44,6 +75,9 @@
 		AA6BD3212C3E103200107AF6 /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
 		AA6BD3262C3E131800107AF6 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
 		AA6BD3282C3E209B00107AF6 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		AA6BD32F2C3E321F00107AF6 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		AA6BD3312C3E328D00107AF6 /* MoneyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyRepository.swift; sourceTree = "<group>"; };
+		AA6BD3332C3E36E100107AF6 /* NumberFomatterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFomatterManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA6BD32C2C3E268200107AF6 /* RealmSwift in Frameworks */,
 				04D2F8FD2C3CAE1800AEFFDC /* SnapKit in Frameworks */,
 				AA6BD3252C3E128100107AF6 /* Alamofire in Frameworks */,
 			);
@@ -78,6 +113,7 @@
 		04D2F8E32C3CAD5A00AEFFDC /* SeSAC5MVVMBasic */ = {
 			isa = PBXGroup;
 			children = (
+				AA3CE2512C3F604C003DB370 /* UI */,
 				AA6BD3042C3CFC6800107AF6 /* Observabld.swift */,
 				AA6BD31E2C3E0E1800107AF6 /* Market */,
 				04D2F9022C3CB11900AEFFDC /* User */,
@@ -119,6 +155,19 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		AA3CE2512C3F604C003DB370 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				AA3CE2522C3F6070003DB370 /* SampleViewController.swift */,
+				AA3CE2542C3F6A03003DB370 /* ImageZoomViewController.swift */,
+				AA3CE2562C3F748C003DB370 /* HorizentalScrollerVC.swift */,
+				AA3CE2582C3F781B003DB370 /* VerticalScrollVC.swift */,
+				AA3CE25A2C3F9EF1003DB370 /* CloserVC.swift */,
+				AA3CE25C2C3FB41B003DB370 /* CloserUpgradeVC.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		AA6BD31E2C3E0E1800107AF6 /* Market */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +175,9 @@
 				AA6BD3212C3E103200107AF6 /* MarketViewModel.swift */,
 				AA6BD3262C3E131800107AF6 /* Market.swift */,
 				AA6BD3282C3E209B00107AF6 /* APIManager.swift */,
+				AA6BD32F2C3E321F00107AF6 /* RealmModel.swift */,
+				AA6BD3312C3E328D00107AF6 /* MoneyRepository.swift */,
+				AA6BD3332C3E36E100107AF6 /* NumberFomatterManager.swift */,
 			);
 			path = Market;
 			sourceTree = "<group>";
@@ -140,6 +192,7 @@
 				04D2F8DD2C3CAD5A00AEFFDC /* Sources */,
 				04D2F8DE2C3CAD5A00AEFFDC /* Frameworks */,
 				04D2F8DF2C3CAD5A00AEFFDC /* Resources */,
+				AA6BD32E2C3E269E00107AF6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +202,7 @@
 			packageProductDependencies = (
 				04D2F8FC2C3CAE1800AEFFDC /* SnapKit */,
 				AA6BD3242C3E128100107AF6 /* Alamofire */,
+				AA6BD32B2C3E268200107AF6 /* RealmSwift */,
 			);
 			productName = SeSAC5MVVMBasic;
 			productReference = 04D2F8E12C3CAD5A00AEFFDC /* SeSAC5MVVMBasic.app */;
@@ -181,6 +235,7 @@
 			packageReferences = (
 				04D2F8FB2C3CAE1800AEFFDC /* XCRemoteSwiftPackageReference "SnapKit" */,
 				AA6BD3232C3E128100107AF6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				AA6BD32A2C3E268200107AF6 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 04D2F8E22C3CAD5A00AEFFDC /* Products */;
 			projectDirPath = "";
@@ -209,17 +264,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D2F8FA2C3CAE0400AEFFDC /* LoginViewController.swift in Sources */,
+				AA6BD3302C3E322000107AF6 /* RealmModel.swift in Sources */,
 				04D2F9042C3CB12600AEFFDC /* UserViewController.swift in Sources */,
+				AA3CE2592C3F781B003DB370 /* VerticalScrollVC.swift in Sources */,
+				AA3CE2552C3F6A03003DB370 /* ImageZoomViewController.swift in Sources */,
+				AA3CE2572C3F748C003DB370 /* HorizentalScrollerVC.swift in Sources */,
 				AA6BD3202C3E0E5D00107AF6 /* MarketViewController.swift in Sources */,
+				AA3CE2532C3F6070003DB370 /* SampleViewController.swift in Sources */,
 				04D2F9012C3CAF5400AEFFDC /* NumberViewController.swift in Sources */,
 				AA6BD3012C3CC6C600107AF6 /* NumberViewModel.swift in Sources */,
 				04D2F8E52C3CAD5A00AEFFDC /* AppDelegate.swift in Sources */,
+				AA3CE25D2C3FB41B003DB370 /* CloserUpgradeVC.swift in Sources */,
+				AA3CE25B2C3F9EF1003DB370 /* CloserVC.swift in Sources */,
 				04D2F8E72C3CAD5A00AEFFDC /* SceneDelegate.swift in Sources */,
 				AA6BD3032C3CD55300107AF6 /* LoginViewModel.swift in Sources */,
 				AA6BD3072C3D0DB100107AF6 /* UserViewModel.swift in Sources */,
 				AA6BD3222C3E103200107AF6 /* MarketViewModel.swift in Sources */,
 				AA6BD3292C3E209B00107AF6 /* APIManager.swift in Sources */,
+				AA6BD3342C3E36E100107AF6 /* NumberFomatterManager.swift in Sources */,
 				AA6BD3052C3CFC6800107AF6 /* Observabld.swift in Sources */,
+				AA6BD3322C3E328D00107AF6 /* MoneyRepository.swift in Sources */,
 				AA6BD3272C3E131800107AF6 /* Market.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +515,14 @@
 				minimumVersion = 5.9.1;
 			};
 		};
+		AA6BD32A2C3E268200107AF6 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.52.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -463,6 +535,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AA6BD3232C3E128100107AF6 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		AA6BD32B2C3E268200107AF6 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AA6BD32A2C3E268200107AF6 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

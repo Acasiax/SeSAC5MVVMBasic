@@ -10,6 +10,8 @@ import Alamofire
 
 final class MarketViewModel {
     
+    let repository = MoneyRepository()
+    
     var inputViewDidLoadTrigger: Observable<Void?> = Observable(nil)
     var inputCellSelected: Observable<Market?> = Observable(nil)
     //var inputCellIndexSelected: Observable<Int> = Observable(0)
@@ -31,8 +33,16 @@ final class MarketViewModel {
         
         inputCellSelected.bind { market in
             print(market)
+            guard let market = market else {return}
+            self.saveMarket(market: market.market, name: market.korean_name, won: .random(in: 1...10))
             
         }
+        
+    }
+    
+    private func saveMarket(market: String, name: String, won: Int) {
+        
+        repository.createItem(market: market, name: name, won: won)
         
     }
     
