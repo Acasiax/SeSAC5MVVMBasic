@@ -13,6 +13,9 @@ class HorizentalScrollerVC: UIViewController {
     let scrollView = UIScrollView()
     let stackView = UIStackView()
     
+    
+  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white

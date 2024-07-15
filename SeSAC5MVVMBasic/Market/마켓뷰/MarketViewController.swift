@@ -46,6 +46,20 @@ class MarketViewController: UIViewController {
         viewModel.outputTitleData.bind { value in
             self.navigationItem.title = value
         }
+        
+        viewModel.outputCellSelected.bind{ data in
+           print("1")
+            
+            guard let data = data else {
+                print("nil이라서 화면 전환 되면 안됨!")
+                return
+            }
+            
+            let vc = MarketDetailViewController()
+            vc.viewModel.outputMarketData.value = data
+            self.navigationController?.pushViewController(vc, animated: true)
+            print("2")
+        }
        
     }
     
@@ -86,9 +100,16 @@ extension MarketViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let data = viewModel.outputMarketData.value[indexPath.row]
+       // let data = viewModel.outputMarketData.value[indexPath.row]
+        //   viewModel.inputCellSelected.value = data
         
+//        let vc = MarketDetailViewController()
+//        navigationController?.pushViewController(vc, animated: true)
+        
+        let data = viewModel.outputMarketData.value[indexPath.row]
         viewModel.inputCellSelected.value = data
+        
+     
         
     }
     

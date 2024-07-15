@@ -26,7 +26,7 @@ var closure: ((T) -> Void)?
     //LoginViewController의
     //🌟
     func bind(closure: @escaping (T) -> Void) {
-        closure(value)
+        closure(value) //🌟
         self.closure = closure
     }
     

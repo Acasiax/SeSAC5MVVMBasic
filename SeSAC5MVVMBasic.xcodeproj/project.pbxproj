@@ -23,7 +23,7 @@
 		AA3CE25D2C3FB41B003DB370 /* CloserUpgradeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA3CE25C2C3FB41B003DB370 /* CloserUpgradeVC.swift */; };
 		AA6BD3012C3CC6C600107AF6 /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3002C3CC6C600107AF6 /* NumberViewModel.swift */; };
 		AA6BD3032C3CD55300107AF6 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3022C3CD55300107AF6 /* LoginViewModel.swift */; };
-		AA6BD3052C3CFC6800107AF6 /* Observabld.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3042C3CFC6800107AF6 /* Observabld.swift */; };
+		AA6BD3052C3CFC6800107AF6 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3042C3CFC6800107AF6 /* Observable.swift */; };
 		AA6BD3072C3D0DB100107AF6 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3062C3D0DB100107AF6 /* UserViewModel.swift */; };
 		AA6BD3202C3E0E5D00107AF6 /* MarketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD31F2C3E0E5D00107AF6 /* MarketViewController.swift */; };
 		AA6BD3222C3E103200107AF6 /* MarketViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3212C3E103200107AF6 /* MarketViewModel.swift */; };
@@ -35,6 +35,9 @@
 		AA6BD3302C3E322000107AF6 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD32F2C3E321F00107AF6 /* RealmModel.swift */; };
 		AA6BD3322C3E328D00107AF6 /* MoneyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3312C3E328D00107AF6 /* MoneyRepository.swift */; };
 		AA6BD3342C3E36E100107AF6 /* NumberFomatterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3332C3E36E100107AF6 /* NumberFomatterManager.swift */; };
+		AAD728C92C44A4160070F4D2 /* MarketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD728C82C44A4160070F4D2 /* MarketDetailViewController.swift */; };
+		AAD728CB2C44AA8E0070F4D2 /* MarketDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD728CA2C44AA8E0070F4D2 /* MarketDetailViewModel.swift */; };
+		AAD728CF2C44B9B70070F4D2 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD728CE2C44B9B70070F4D2 /* AnimationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,7 +72,7 @@
 		AA3CE25C2C3FB41B003DB370 /* CloserUpgradeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloserUpgradeVC.swift; sourceTree = "<group>"; };
 		AA6BD3002C3CC6C600107AF6 /* NumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
 		AA6BD3022C3CD55300107AF6 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		AA6BD3042C3CFC6800107AF6 /* Observabld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observabld.swift; sourceTree = "<group>"; };
+		AA6BD3042C3CFC6800107AF6 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		AA6BD3062C3D0DB100107AF6 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		AA6BD31F2C3E0E5D00107AF6 /* MarketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewController.swift; sourceTree = "<group>"; };
 		AA6BD3212C3E103200107AF6 /* MarketViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketViewModel.swift; sourceTree = "<group>"; };
@@ -78,6 +81,9 @@
 		AA6BD32F2C3E321F00107AF6 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		AA6BD3312C3E328D00107AF6 /* MoneyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyRepository.swift; sourceTree = "<group>"; };
 		AA6BD3332C3E36E100107AF6 /* NumberFomatterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFomatterManager.swift; sourceTree = "<group>"; };
+		AAD728C82C44A4160070F4D2 /* MarketDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailViewController.swift; sourceTree = "<group>"; };
+		AAD728CA2C44AA8E0070F4D2 /* MarketDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailViewModel.swift; sourceTree = "<group>"; };
+		AAD728CE2C44B9B70070F4D2 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				AA3CE2512C3F604C003DB370 /* UI */,
-				AA6BD3042C3CFC6800107AF6 /* Observabld.swift */,
+				AA6BD3042C3CFC6800107AF6 /* Observable.swift */,
 				AA6BD31E2C3E0E1800107AF6 /* Market */,
 				04D2F9022C3CB11900AEFFDC /* User */,
 				04D2F8FF2C3CAF4C00AEFFDC /* Number */,
@@ -164,6 +170,7 @@
 				AA3CE2582C3F781B003DB370 /* VerticalScrollVC.swift */,
 				AA3CE25A2C3F9EF1003DB370 /* CloserVC.swift */,
 				AA3CE25C2C3FB41B003DB370 /* CloserUpgradeVC.swift */,
+				AAD728CE2C44B9B70070F4D2 /* AnimationViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -171,8 +178,8 @@
 		AA6BD31E2C3E0E1800107AF6 /* Market */ = {
 			isa = PBXGroup;
 			children = (
-				AA6BD31F2C3E0E5D00107AF6 /* MarketViewController.swift */,
-				AA6BD3212C3E103200107AF6 /* MarketViewModel.swift */,
+				AAD728CD2C44AEFD0070F4D2 /* 마켓디테일뷰 */,
+				AAD728CC2C44AEEC0070F4D2 /* 마켓뷰 */,
 				AA6BD3262C3E131800107AF6 /* Market.swift */,
 				AA6BD3282C3E209B00107AF6 /* APIManager.swift */,
 				AA6BD32F2C3E321F00107AF6 /* RealmModel.swift */,
@@ -180,6 +187,26 @@
 				AA6BD3332C3E36E100107AF6 /* NumberFomatterManager.swift */,
 			);
 			path = Market;
+			sourceTree = "<group>";
+		};
+		AAD728CC2C44AEEC0070F4D2 /* 마켓뷰 */ = {
+			isa = PBXGroup;
+			children = (
+				AA6BD31F2C3E0E5D00107AF6 /* MarketViewController.swift */,
+				AA6BD3212C3E103200107AF6 /* MarketViewModel.swift */,
+			);
+			name = "마켓뷰";
+			path = "마켓뷰";
+			sourceTree = "<group>";
+		};
+		AAD728CD2C44AEFD0070F4D2 /* 마켓디테일뷰 */ = {
+			isa = PBXGroup;
+			children = (
+				AAD728C82C44A4160070F4D2 /* MarketDetailViewController.swift */,
+				AAD728CA2C44AA8E0070F4D2 /* MarketDetailViewModel.swift */,
+			);
+			name = "마켓디테일뷰";
+			path = "마켓디테일뷰";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +292,7 @@
 			files = (
 				04D2F8FA2C3CAE0400AEFFDC /* LoginViewController.swift in Sources */,
 				AA6BD3302C3E322000107AF6 /* RealmModel.swift in Sources */,
+				AAD728CF2C44B9B70070F4D2 /* AnimationViewController.swift in Sources */,
 				04D2F9042C3CB12600AEFFDC /* UserViewController.swift in Sources */,
 				AA3CE2592C3F781B003DB370 /* VerticalScrollVC.swift in Sources */,
 				AA3CE2552C3F6A03003DB370 /* ImageZoomViewController.swift in Sources */,
@@ -272,6 +300,7 @@
 				AA6BD3202C3E0E5D00107AF6 /* MarketViewController.swift in Sources */,
 				AA3CE2532C3F6070003DB370 /* SampleViewController.swift in Sources */,
 				04D2F9012C3CAF5400AEFFDC /* NumberViewController.swift in Sources */,
+				AAD728C92C44A4160070F4D2 /* MarketDetailViewController.swift in Sources */,
 				AA6BD3012C3CC6C600107AF6 /* NumberViewModel.swift in Sources */,
 				04D2F8E52C3CAD5A00AEFFDC /* AppDelegate.swift in Sources */,
 				AA3CE25D2C3FB41B003DB370 /* CloserUpgradeVC.swift in Sources */,
@@ -279,10 +308,11 @@
 				04D2F8E72C3CAD5A00AEFFDC /* SceneDelegate.swift in Sources */,
 				AA6BD3032C3CD55300107AF6 /* LoginViewModel.swift in Sources */,
 				AA6BD3072C3D0DB100107AF6 /* UserViewModel.swift in Sources */,
+				AAD728CB2C44AA8E0070F4D2 /* MarketDetailViewModel.swift in Sources */,
 				AA6BD3222C3E103200107AF6 /* MarketViewModel.swift in Sources */,
 				AA6BD3292C3E209B00107AF6 /* APIManager.swift in Sources */,
 				AA6BD3342C3E36E100107AF6 /* NumberFomatterManager.swift in Sources */,
-				AA6BD3052C3CFC6800107AF6 /* Observabld.swift in Sources */,
+				AA6BD3052C3CFC6800107AF6 /* Observable.swift in Sources */,
 				AA6BD3322C3E328D00107AF6 /* MoneyRepository.swift in Sources */,
 				AA6BD3272C3E131800107AF6 /* Market.swift in Sources */,
 			);
