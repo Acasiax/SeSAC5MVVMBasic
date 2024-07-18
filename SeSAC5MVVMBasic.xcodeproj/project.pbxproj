@@ -36,6 +36,7 @@
 		AA6BD3322C3E328D00107AF6 /* MoneyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3312C3E328D00107AF6 /* MoneyRepository.swift */; };
 		AA6BD3342C3E36E100107AF6 /* NumberFomatterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3332C3E36E100107AF6 /* NumberFomatterManager.swift */; };
 		AAA21AED2C489BF60069EA9B /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA21AEC2C489BF60069EA9B /* SimpleViewController.swift */; };
+		AAA21AEF2C48A5060069EA9B /* SimpleCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA21AEE2C48A5060069EA9B /* SimpleCollectionViewController.swift */; };
 		AAD728C92C44A4160070F4D2 /* MarketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD728C82C44A4160070F4D2 /* MarketDetailViewController.swift */; };
 		AAD728CB2C44AA8E0070F4D2 /* MarketDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD728CA2C44AA8E0070F4D2 /* MarketDetailViewModel.swift */; };
 		AAD728CF2C44B9B70070F4D2 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD728CE2C44B9B70070F4D2 /* AnimationViewController.swift */; };
@@ -88,6 +89,7 @@
 		AA6BD3312C3E328D00107AF6 /* MoneyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyRepository.swift; sourceTree = "<group>"; };
 		AA6BD3332C3E36E100107AF6 /* NumberFomatterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFomatterManager.swift; sourceTree = "<group>"; };
 		AAA21AEC2C489BF60069EA9B /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
+		AAA21AEE2C48A5060069EA9B /* SimpleCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewController.swift; sourceTree = "<group>"; };
 		AAD728C82C44A4160070F4D2 /* MarketDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailViewController.swift; sourceTree = "<group>"; };
 		AAD728CA2C44AA8E0070F4D2 /* MarketDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailViewModel.swift; sourceTree = "<group>"; };
 		AAD728CE2C44B9B70070F4D2 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				AAA21AEC2C489BF60069EA9B /* SimpleViewController.swift */,
+				AAA21AEE2C48A5060069EA9B /* SimpleCollectionViewController.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				04D2F8E72C3CAD5A00AEFFDC /* SceneDelegate.swift in Sources */,
 				AA6BD3032C3CD55300107AF6 /* LoginViewModel.swift in Sources */,
 				AA6BD3072C3D0DB100107AF6 /* UserViewModel.swift in Sources */,
+				AAA21AEF2C48A5060069EA9B /* SimpleCollectionViewController.swift in Sources */,
 				AAD728CB2C44AA8E0070F4D2 /* MarketDetailViewModel.swift in Sources */,
 				AA6BD3222C3E103200107AF6 /* MarketViewModel.swift in Sources */,
 				AA6BD3292C3E209B00107AF6 /* APIManager.swift in Sources */,

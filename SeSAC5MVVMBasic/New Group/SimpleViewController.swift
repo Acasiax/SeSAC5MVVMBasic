@@ -10,8 +10,17 @@ import SnapKit
 
 
 /*
- UITableViewDelegate, UITableViewDataSource
+ UITableViewDelegate, UITableViewDataSource: sys. cus
+ UI컬렉션뷰 딜리게이트, 유아이컬렉션뷰 데이타소스: ststem x,
+ - 지금은 list 형태 이지만 나중에 변경될 가능성
+ - >>> 컬렉션뷰이지만 테이블뷰 처럼 쓸 수 있게 해줄게
+ 
+ // 무엇 (어떤 데이터)을 어떤 (Flow)레이아웃으로 표현(셀 디자인)할 것인가?
+ 
+ 
+ 
  iOS13+
+ 
  */
 
 class SimpleViewController: UIViewController {
