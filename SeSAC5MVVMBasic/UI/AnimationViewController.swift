@@ -154,6 +154,8 @@ class AnimationViewController: UIViewController {
 //1. 프로토콜 자체는 dynamic인가요, static인가요?
 //
 //프로토콜 자체는 정적(static)입니다. 즉, 프로토콜은 컴파일 시점에 확인되며, 타입 정보도 정적입니다. 다만, 프로토콜을 채택한 객체는 동적으로 동작할 수 있습니다. 예를 들어, 프로토콜을 사용하여 다형성을 구현할 수 있는데, 이는 런타임에 동적으로 동작하는 부분입니다.
+
+
 //
 //2. AnyObject를 채택하면 왜 클래스 제약이 가능한가요? Any와 AnyObject의 차이점을 알려주세요.
 //
@@ -161,6 +163,9 @@ class AnimationViewController: UIViewController {
 //
 //Any: 모든 타입을 포함합니다. (클래스, 구조체, 열거형, 함수 등)
 //AnyObject: 클래스 타입만 포함합니다.
+
+
+
 //3. 확장 자체는 dynamic인가요, static한가요?
 //
 //확장(extension) 자체는 정적(static)입니다. 즉, 컴파일 시점에 확장이 이루어집니다. 하지만 확장의 내용에 따라 동적으로 동작할 수도 있습니다. 예를 들어, 확장에서 추가된 메소드가 런타임에 호출될 때 동적으로 동작할 수 있습니다.

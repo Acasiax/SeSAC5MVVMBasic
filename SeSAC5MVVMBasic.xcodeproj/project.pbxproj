@@ -35,9 +35,15 @@
 		AA6BD3302C3E322000107AF6 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD32F2C3E321F00107AF6 /* RealmModel.swift */; };
 		AA6BD3322C3E328D00107AF6 /* MoneyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3312C3E328D00107AF6 /* MoneyRepository.swift */; };
 		AA6BD3342C3E36E100107AF6 /* NumberFomatterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6BD3332C3E36E100107AF6 /* NumberFomatterManager.swift */; };
+		AAA21AED2C489BF60069EA9B /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA21AEC2C489BF60069EA9B /* SimpleViewController.swift */; };
 		AAD728C92C44A4160070F4D2 /* MarketDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD728C82C44A4160070F4D2 /* MarketDetailViewController.swift */; };
 		AAD728CB2C44AA8E0070F4D2 /* MarketDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD728CA2C44AA8E0070F4D2 /* MarketDetailViewModel.swift */; };
 		AAD728CF2C44B9B70070F4D2 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD728CE2C44B9B70070F4D2 /* AnimationViewController.swift */; };
+		AAD728EC2C45F73A0070F4D2 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD728E72C45F73A0070F4D2 /* StartViewController.swift */; };
+		AAD728ED2C45F73A0070F4D2 /* BoxOfficeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD728E82C45F73A0070F4D2 /* BoxOfficeViewModel.swift */; };
+		AAD728EE2C45F73A0070F4D2 /* BoxOffice.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD728E92C45F73A0070F4D2 /* BoxOffice.swift */; };
+		AAD728EF2C45F73A0070F4D2 /* BoxOfficeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD728EA2C45F73A0070F4D2 /* BoxOfficeViewController.swift */; };
+		AAD728F02C45F73A0070F4D2 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD728EB2C45F73A0070F4D2 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,9 +87,15 @@
 		AA6BD32F2C3E321F00107AF6 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		AA6BD3312C3E328D00107AF6 /* MoneyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyRepository.swift; sourceTree = "<group>"; };
 		AA6BD3332C3E36E100107AF6 /* NumberFomatterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFomatterManager.swift; sourceTree = "<group>"; };
+		AAA21AEC2C489BF60069EA9B /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
 		AAD728C82C44A4160070F4D2 /* MarketDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailViewController.swift; sourceTree = "<group>"; };
 		AAD728CA2C44AA8E0070F4D2 /* MarketDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDetailViewModel.swift; sourceTree = "<group>"; };
 		AAD728CE2C44B9B70070F4D2 /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		AAD728E72C45F73A0070F4D2 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		AAD728E82C45F73A0070F4D2 /* BoxOfficeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxOfficeViewModel.swift; sourceTree = "<group>"; };
+		AAD728E92C45F73A0070F4D2 /* BoxOffice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxOffice.swift; sourceTree = "<group>"; };
+		AAD728EA2C45F73A0070F4D2 /* BoxOfficeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxOfficeViewController.swift; sourceTree = "<group>"; };
+		AAD728EB2C45F73A0070F4D2 /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +131,8 @@
 		04D2F8E32C3CAD5A00AEFFDC /* SeSAC5MVVMBasic */ = {
 			isa = PBXGroup;
 			children = (
+				AAA21AEB2C489BD60069EA9B /* New Group */,
+				AAD728E62C45F7200070F4D2 /* Boxoffice */,
 				AA3CE2512C3F604C003DB370 /* UI */,
 				AA6BD3042C3CFC6800107AF6 /* Observable.swift */,
 				AA6BD31E2C3E0E1800107AF6 /* Market */,
@@ -189,6 +203,14 @@
 			path = Market;
 			sourceTree = "<group>";
 		};
+		AAA21AEB2C489BD60069EA9B /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				AAA21AEC2C489BF60069EA9B /* SimpleViewController.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		AAD728CC2C44AEEC0070F4D2 /* 마켓뷰 */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +229,18 @@
 			);
 			name = "마켓디테일뷰";
 			path = "마켓디테일뷰";
+			sourceTree = "<group>";
+		};
+		AAD728E62C45F7200070F4D2 /* Boxoffice */ = {
+			isa = PBXGroup;
+			children = (
+				AAD728E92C45F73A0070F4D2 /* BoxOffice.swift */,
+				AAD728EA2C45F73A0070F4D2 /* BoxOfficeViewController.swift */,
+				AAD728E82C45F73A0070F4D2 /* BoxOfficeViewModel.swift */,
+				AAD728EB2C45F73A0070F4D2 /* NetworkService.swift */,
+				AAD728E72C45F73A0070F4D2 /* StartViewController.swift */,
+			);
+			path = Boxoffice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,10 +329,12 @@
 				AAD728CF2C44B9B70070F4D2 /* AnimationViewController.swift in Sources */,
 				04D2F9042C3CB12600AEFFDC /* UserViewController.swift in Sources */,
 				AA3CE2592C3F781B003DB370 /* VerticalScrollVC.swift in Sources */,
+				AAD728EF2C45F73A0070F4D2 /* BoxOfficeViewController.swift in Sources */,
 				AA3CE2552C3F6A03003DB370 /* ImageZoomViewController.swift in Sources */,
 				AA3CE2572C3F748C003DB370 /* HorizentalScrollerVC.swift in Sources */,
 				AA6BD3202C3E0E5D00107AF6 /* MarketViewController.swift in Sources */,
 				AA3CE2532C3F6070003DB370 /* SampleViewController.swift in Sources */,
+				AAD728F02C45F73A0070F4D2 /* NetworkService.swift in Sources */,
 				04D2F9012C3CAF5400AEFFDC /* NumberViewController.swift in Sources */,
 				AAD728C92C44A4160070F4D2 /* MarketDetailViewController.swift in Sources */,
 				AA6BD3012C3CC6C600107AF6 /* NumberViewModel.swift in Sources */,
@@ -311,10 +347,14 @@
 				AAD728CB2C44AA8E0070F4D2 /* MarketDetailViewModel.swift in Sources */,
 				AA6BD3222C3E103200107AF6 /* MarketViewModel.swift in Sources */,
 				AA6BD3292C3E209B00107AF6 /* APIManager.swift in Sources */,
+				AAD728ED2C45F73A0070F4D2 /* BoxOfficeViewModel.swift in Sources */,
+				AAD728EC2C45F73A0070F4D2 /* StartViewController.swift in Sources */,
+				AAD728EE2C45F73A0070F4D2 /* BoxOffice.swift in Sources */,
 				AA6BD3342C3E36E100107AF6 /* NumberFomatterManager.swift in Sources */,
 				AA6BD3052C3CFC6800107AF6 /* Observable.swift in Sources */,
 				AA6BD3322C3E328D00107AF6 /* MoneyRepository.swift in Sources */,
 				AA6BD3272C3E131800107AF6 /* Market.swift in Sources */,
+				AAA21AED2C489BF60069EA9B /* SimpleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
